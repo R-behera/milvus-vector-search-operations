@@ -1,19 +1,16 @@
-Today I shipped **Milvus Vector Search Operations**, a research-backed Scalable Vector Search project inspired by **Milvus**.
+Shipped **Radiology Report Search Hub** today.
 
-        What I changed from the base research or repo:
-        1. Expose retrieval traces and grounding behavior through a product-style interface for scalable vector search.
-2. Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.
-3. Turn retrieval quality into something operators can tune and explain to non-ML stakeholders.
+This one is built around a real workflow for **Radiologists and imaging operations teams**.
 
-I also reviewed the upstream repo and focused on gaps like: No obvious Python dependency manifest was found.
+Problem:
+Radiologists need fast access to similar prior findings and historical wording without manually scanning large archives.
 
-        Why it matters:
-        - easier to demo
-        - easier to operate
-        - easier to explain to product, analytics, and engineering teams
+What it helps decide:
+Surface relevant prior reports and similar findings during case review.
 
-        Repo: https://github.com/R-behera/milvus-vector-search-operations
-        Paper: https://github.com/milvus-io/milvus
-        Screenshot: demo/screenshot.png
+Why that matters:
+Reduce review time and improve report consistency.
 
-        #milvus #vectordb #search #rag #AI #MachineLearning #LLM #DataScience
+Repo: https://github.com/R-behera/milvus-vector-search-operations
+
+#radiology #search #retrieval #healthcare #AI #MachineLearning #DataScience
