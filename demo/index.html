@@ -1,0 +1,103 @@
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Milvus Vector Search Operations</title>
+          <link rel="stylesheet" href="./styles.css">
+        </head>
+        <body class="surface-mist">
+          <div class="page layout-rail eyebrow-soft headline-normal modules-2 hero-align-split">
+            <section class="hero">
+              <div class="panel hero-copy">
+                <span class="eyebrow" data-health>Grounded Navigator</span>
+                <h1 id="project-title">Milvus Vector Search Operations</h1>
+                <p id="project-summary" class="lead">Turn vector search infrastructure into an operations product with index health, search diagnostics, and retrieval service management.</p>
+                <ul id="project-tags" class="tag-list">
+                  <li>milvus</li><li>vector-db</li><li>search</li><li>rag</li>
+                </ul>
+              </div>
+              <div class="panel hero-side">
+                <div class="metric-grid">
+                  <article class='card'><span>Grounded Recall</span><strong>83%</strong><em>+4.6%</em></article>
+<article class='card'><span>Citation Coverage</span><strong>88%</strong><em>+3.1%</em></article>
+<article class='card'><span>Latency</span><strong>215ms</strong><em>-18ms</em></article>
+                </div>
+                <div class="mini-grid">
+                  <article class='mini-card'><span>Project Type</span><strong>RAG</strong></article><article class='mini-card'><span>Domain</span><strong>Scalable Vector Search</strong></article><article class='mini-card'><span>Application</span><strong>Grounded Navigator</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                </div>
+              </div>
+            </section>
+            <section class="app-grid">
+              <article class="panel module js-module span-wide">
+  <div class="module-header">
+    <span>Query 01</span>
+    <h2>Grounded Question</h2>
+    <p>Ask a domain question and retrieve the most relevant context from the local knowledge base.</p>
+  </div>
+  <textarea class="js-input module-input-text">What is the top priority recommendation for Milvus Vector Search Operations?</textarea>
+  <div class="button-row">
+    <button class="js-run" data-endpoint="/query" data-input-mode="text">Search Context</button>
+  </div>
+  <pre class="js-output">Grounded answer and supporting contexts will appear here.</pre>
+</article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 02</span>
+            <h2>Retrieval Quality Review</h2>
+            <p>Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 81.5,
+    &quot;activation&quot;: 69.5,
+    &quot;retention&quot;: 76.0,
+    &quot;revenue&quot;: 137.5
+  },
+  &quot;baseline&quot;: {
+    &quot;acquisition&quot;: 74.98,
+    &quot;activation&quot;: 63.94,
+    &quot;retention&quot;: 69.92,
+    &quot;revenue&quot;: 126.5
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Quality</button>
+          </div>
+          <pre class="js-output">Quality delta summary will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 03</span>
+            <h2>Response Playbook</h2>
+            <p>Generate a recommended follow-up workflow grounded in the project context.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for Milvus Vector Search Operations.&quot;,
+  &quot;features&quot;: {
+    &quot;query&quot;: &quot;Summarize the highest priority risk and recommended next step.&quot;,
+    &quot;audience&quot;: &quot;leadership&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 81.5,
+    &quot;activation&quot;: 69.5,
+    &quot;retention&quot;: 76.0,
+    &quot;revenue&quot;: 137.5
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Build Response</button>
+          </div>
+          <pre class="js-output">Recommended workflow steps will appear here.</pre>
+        </article>
+            </section>
+            <footer class="footer">
+              <span>Scalable Vector Search • RAG • Grounded Navigator</span>
+              <span>milvus-vector-search-operations</span>
+            </footer>
+          </div>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "milvus-vector-search-operations", "title": "Milvus Vector Search Operations", "project_type": "rag", "domain": "Scalable Vector Search", "summary": "Turn vector search infrastructure into an operations product with index health, search diagnostics, and retrieval service management.", "tags": ["milvus", "vector-db", "search", "rag"]}, "app_archetype": "navigator", "ui_profile": {"layout": "rail", "surface": "mist", "font_stack": "\"Space Grotesk\", \"Segoe UI\", sans-serif", "radius": 21, "shadow": 59, "eyebrow_style": "soft", "module_columns": 2, "hero_align": "split", "headline_mode": "normal"}, "app_modules": [{"label": "Query 01", "title": "Grounded Question", "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.", "endpoint": "/query", "input_mode": "text", "cta": "Search Context", "prefill": "What is the top priority recommendation for Milvus Vector Search Operations?", "hint": "Grounded answer and supporting contexts will appear here.", "span": "wide"}, {"label": "Query 02", "title": "Retrieval Quality Review", "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Quality", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 81.5,\n    \"activation\": 69.5,\n    \"retention\": 76.0,\n    \"revenue\": 137.5\n  },\n  \"baseline\": {\n    \"acquisition\": 74.98,\n    \"activation\": 63.94,\n    \"retention\": 69.92,\n    \"revenue\": 126.5\n  }\n}", "hint": "Quality delta summary will appear here.", "span": "normal"}, {"label": "Query 03", "title": "Response Playbook", "description": "Generate a recommended follow-up workflow grounded in the project context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Build Response", "prefill": "{\n  \"prompt\": \"Recommend the next best action for Milvus Vector Search Operations.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"leadership\"\n  },\n  \"metrics\": {\n    \"acquisition\": 81.5,\n    \"activation\": 69.5,\n    \"retention\": 76.0,\n    \"revenue\": 137.5\n  }\n}", "hint": "Recommended workflow steps will appear here.", "span": "normal"}], "sample_features": {"query": "Summarize the highest priority risk and recommended next step.", "audience": "leadership"}, "sample_metrics": {"acquisition": 81.5, "activation": 69.5, "retention": 76.0, "revenue": 137.5}, "knowledge_base": ["Milvus Vector Search Operations is positioned as a Scalable Vector Search starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Turn vector search infrastructure into an operations product with index health, search diagnostics, and retrieval service management.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on milvus, vector-db, search, rag.", "Source paper: Milvus", "Official repo: https://github.com/milvus-io/milvus", "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for scalable vector search.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."], "dashboard_metrics": [{"label": "Grounded Recall", "value": "83%", "delta": "+4.6%"}, {"label": "Citation Coverage", "value": "88%", "delta": "+3.1%"}, {"label": "Latency", "value": "215ms", "delta": "-18ms"}]}</script>
+          <script src="./app.js"></script>
+        </body>
+        </html>

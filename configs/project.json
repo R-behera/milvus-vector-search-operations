@@ -1,0 +1,114 @@
+{
+  "slug": "milvus-vector-search-operations",
+  "title": "Milvus Vector Search Operations",
+  "project_type": "rag",
+  "domain": "Scalable Vector Search",
+  "summary": "Turn vector search infrastructure into an operations product with index health, search diagnostics, and retrieval service management.",
+  "tags": [
+    "milvus",
+    "vector-db",
+    "search",
+    "rag"
+  ],
+  "accent": "#2cc6c8",
+  "secondary_accent": "#94a92c",
+  "dashboard_metrics": [
+    {
+      "label": "Grounded Recall",
+      "value": "83%",
+      "delta": "+4.6%"
+    },
+    {
+      "label": "Citation Coverage",
+      "value": "88%",
+      "delta": "+3.1%"
+    },
+    {
+      "label": "Latency",
+      "value": "215ms",
+      "delta": "-18ms"
+    }
+  ],
+  "sample_features": {
+    "query": "Summarize the highest priority risk and recommended next step.",
+    "audience": "leadership"
+  },
+  "sample_metrics": {
+    "acquisition": 81.5,
+    "activation": 69.5,
+    "retention": 76.0,
+    "revenue": 137.5
+  },
+  "knowledge_base": [
+    "Milvus Vector Search Operations is positioned as a Scalable Vector Search starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Turn vector search infrastructure into an operations product with index health, search diagnostics, and retrieval service management.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on milvus, vector-db, search, rag.",
+    "Source paper: Milvus",
+    "Official repo: https://github.com/milvus-io/milvus",
+    "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for scalable vector search.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "research_key": "milvus-vector-search-operations",
+  "research_score": 9.735,
+  "paper_title": "Milvus",
+  "paper_url": "https://github.com/milvus-io/milvus",
+  "repo_url": "https://github.com/milvus-io/milvus",
+  "repo_org": "milvus-io",
+  "why_high_score": [
+    "Official or primary upstream repo with 43818 GitHub stars.",
+    "Active maintenance signal with recent push at 2026-04-16T00:13:41Z.",
+    "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
+  ],
+  "differentiation_hooks": [
+    "Expose retrieval traces and grounding behavior through a product-style interface for scalable vector search.",
+    "Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.",
+    "Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "app_archetype": "navigator",
+  "ui_profile": {
+    "layout": "rail",
+    "surface": "mist",
+    "font_stack": "\"Space Grotesk\", \"Segoe UI\", sans-serif",
+    "radius": 21,
+    "shadow": 59,
+    "eyebrow_style": "soft",
+    "module_columns": 2,
+    "hero_align": "split",
+    "headline_mode": "normal"
+  },
+  "app_modules": [
+    {
+      "label": "Query 01",
+      "title": "Grounded Question",
+      "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.",
+      "endpoint": "/query",
+      "input_mode": "text",
+      "cta": "Search Context",
+      "prefill": "What is the top priority recommendation for Milvus Vector Search Operations?",
+      "hint": "Grounded answer and supporting contexts will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Query 02",
+      "title": "Retrieval Quality Review",
+      "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Review Quality",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 81.5,\n    \"activation\": 69.5,\n    \"retention\": 76.0,\n    \"revenue\": 137.5\n  },\n  \"baseline\": {\n    \"acquisition\": 74.98,\n    \"activation\": 63.94,\n    \"retention\": 69.92,\n    \"revenue\": 126.5\n  }\n}",
+      "hint": "Quality delta summary will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Query 03",
+      "title": "Response Playbook",
+      "description": "Generate a recommended follow-up workflow grounded in the project context.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Build Response",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for Milvus Vector Search Operations.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"leadership\"\n  },\n  \"metrics\": {\n    \"acquisition\": 81.5,\n    \"activation\": 69.5,\n    \"retention\": 76.0,\n    \"revenue\": 137.5\n  }\n}",
+      "hint": "Recommended workflow steps will appear here.",
+      "span": "normal"
+    }
+  ]
+}
