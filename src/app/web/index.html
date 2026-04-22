@@ -1,99 +1,29 @@
-
-        <!doctype html>
-        <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Radiology Report Search Hub</title>
-          <link rel="stylesheet" href="./styles.css">
-        </head>
-        <body class="surface-mist">
-          <div class="page layout-rail eyebrow-soft headline-normal modules-2 hero-align-split">
-            <section class="hero">
-              <div class="panel hero-copy">
-                <span class="eyebrow" data-health>Grounded Navigator</span>
-                <h1 id="project-title">Radiology Report Search Hub</h1>
-                <p id="project-summary" class="lead">Search prior reports, imaging findings, and clinical notes to speed radiology review and case comparison workflows.</p>
-                <ul id="project-tags" class="tag-list">
-                  <li>radiology</li><li>search</li><li>retrieval</li><li>healthcare</li>
-                </ul>
-              </div>
-              <div class="panel hero-side">
-                <div class="metric-grid">
-                  <article class='card'><span>Similar Case Recall</span><strong>89%</strong><em>+5.5%</em></article>
-<article class='card'><span>Turnaround Time</span><strong>41m</strong><em>-8m</em></article>
-<article class='card'><span>Search Latency</span><strong>340ms</strong><em>-70ms</em></article>
-                </div>
-                <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>RAG</strong></article><article class='mini-card'><span>Domain</span><strong>Clinical Knowledge Search</strong></article><article class='mini-card'><span>Application</span><strong>Grounded Navigator</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
-                </div>
-              </div>
-            </section>
-            <section class="app-grid">
-              <article class="panel module js-module span-wide">
-  <div class="module-header">
-    <span>Radio 01</span>
-    <h2>Similar Case Search</h2>
-    <p>Search prior radiology reports for relevant similar findings.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radiology Report Search Hub App</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div id="scene" class="app-scene">
+    <header class="shell hero">
+      <div>
+        <span class="eyebrow">Applied AI product systems</span>
+        <h1>Radiology Report Search Hub</h1>
+        <p>![Demo Screenshot](demo/screenshot.png)</p>
+      </div>
+      <aside class="status-card">
+        <div class="pill">API connected</div>
+        <div class="pill">operations lead</div>
+        <div class="pill">neural-ribbon</div>
+      </aside>
+    </header>
+    <section id="metrics" class="grid metrics"></section>
+    <section id="signals" class="grid signals"></section>
   </div>
-  <textarea class="js-input module-input-text">Show prior chest CT reports with bilateral ground-glass opacities and no pleural effusion.</textarea>
-  <div class="button-row">
-    <button class="js-run" data-endpoint="/query" data-input-mode="text">Find Similar Cases</button>
-  </div>
-  <pre class="js-output">Similar case context appears here.</pre>
-</article>
-<article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Radio 02</span>
-            <h2>Archive Performance Review</h2>
-            <p>Review retrieval quality and turnaround improvement against baseline search behavior.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;metrics&quot;: {
-    &quot;similar_case_recall&quot;: 89.0,
-    &quot;search_latency_ms&quot;: 340.0,
-    &quot;report_turnaround_minutes&quot;: 41.0
-  },
-  &quot;baseline&quot;: {
-    &quot;similar_case_recall&quot;: 83.5,
-    &quot;search_latency_ms&quot;: 410.0,
-    &quot;report_turnaround_minutes&quot;: 49.0
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Archive</button>
-          </div>
-          <pre class="js-output">Archive performance appears here.</pre>
-        </article>
-<article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Radio 03</span>
-            <h2>Report Prep Note</h2>
-            <p>Generate a prep note highlighting comparable prior cases before signoff.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;prompt&quot;: &quot;Draft the comparison note for a complex chest CT case.&quot;,
-  &quot;features&quot;: {
-    &quot;modality&quot;: &quot;CT&quot;,
-    &quot;body_part&quot;: &quot;chest&quot;
-  },
-  &quot;metrics&quot;: {
-    &quot;similar_case_recall&quot;: 0.89,
-    &quot;report_turnaround_minutes&quot;: 41.0
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Prep Note</button>
-          </div>
-          <pre class="js-output">Prep note appears here.</pre>
-        </article>
-            </section>
-            <footer class="footer">
-              <span>Clinical Knowledge Search • RAG • Grounded Navigator</span>
-              <span>milvus-vector-search-operations</span>
-            </footer>
-          </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "milvus-vector-search-operations", "title": "Radiology Report Search Hub", "project_type": "rag", "domain": "Clinical Knowledge Search", "summary": "Search prior reports, imaging findings, and clinical notes to speed radiology review and case comparison workflows.", "tags": ["radiology", "search", "retrieval", "healthcare"]}, "app_archetype": "navigator", "ui_profile": {"layout": "rail", "surface": "mist", "font_stack": "\"Space Grotesk\", \"Segoe UI\", sans-serif", "radius": 21, "shadow": 59, "eyebrow_style": "soft", "module_columns": 2, "hero_align": "split", "headline_mode": "normal"}, "app_modules": [{"label": "Radio 01", "title": "Similar Case Search", "description": "Search prior radiology reports for relevant similar findings.", "endpoint": "/query", "input_mode": "text", "cta": "Find Similar Cases", "prefill": "Show prior chest CT reports with bilateral ground-glass opacities and no pleural effusion.", "hint": "Similar case context appears here.", "span": "wide"}, {"label": "Radio 02", "title": "Archive Performance Review", "description": "Review retrieval quality and turnaround improvement against baseline search behavior.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Archive", "prefill": "{\n  \"metrics\": {\n    \"similar_case_recall\": 89.0,\n    \"search_latency_ms\": 340.0,\n    \"report_turnaround_minutes\": 41.0\n  },\n  \"baseline\": {\n    \"similar_case_recall\": 83.5,\n    \"search_latency_ms\": 410.0,\n    \"report_turnaround_minutes\": 49.0\n  }\n}", "hint": "Archive performance appears here.", "span": "normal"}, {"label": "Radio 03", "title": "Report Prep Note", "description": "Generate a prep note highlighting comparable prior cases before signoff.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Prep Note", "prefill": "{\n  \"prompt\": \"Draft the comparison note for a complex chest CT case.\",\n  \"features\": {\n    \"modality\": \"CT\",\n    \"body_part\": \"chest\"\n  },\n  \"metrics\": {\n    \"similar_case_recall\": 0.89,\n    \"report_turnaround_minutes\": 41.0\n  }\n}", "hint": "Prep note appears here.", "span": "normal"}], "sample_features": {"modality": "CT", "body_part": "chest", "finding_complexity": "high", "archive_size_m": 3.2, "urgent_case": true}, "sample_metrics": {"similar_case_recall": 0.89, "search_latency_ms": 340, "report_turnaround_minutes": 41.0, "wording_reuse_gain": 0.27}, "knowledge_base": ["User: radiologists comparing current cases to prior findings.", "Primary pain: prior report retrieval is slow when case similarity is buried in large archives.", "Decision output: retrieve similar findings and recommended report context.", "Business impact: faster turnaround and more consistent reporting."], "dashboard_metrics": [{"label": "Similar Case Recall", "value": "89%", "delta": "+5.5%"}, {"label": "Turnaround Time", "value": "41m", "delta": "-8m"}, {"label": "Search Latency", "value": "340ms", "delta": "-70ms"}]}</script>
-          <script src="./app.js"></script>
-        </body>
-        </html>
+  <script>window.PROJECT_MANIFEST = {"slug": "milvus-vector-search-operations", "title": "Radiology Report Search Hub", "summary": "![Demo Screenshot](demo/screenshot.png)", "domain": "Applied AI product systems", "audience": "operations lead", "promise": "Turn promising technical capability into a production-shaped workflow for real teams.", "hero": ["Production-grade app scaffold with API, CI, tests, Docker, and GitHub Pages landing.", "3D landing surface designed for GitHub Pages and recruiter-friendly storytelling.", "App backend structured for local or container deployment without changing the product narrative."], "kpis": [{"label": "Workflow clarity", "value": "96%", "note": "Operator actions mapped to product stages"}, {"label": "Deployment posture", "value": "API + Docker", "note": "Local and containerized startup paths"}, {"label": "Presentation layer", "value": "3D Pages ready", "note": "Static GitHub landing page included"}], "stages": ["ingest", "validate", "analyze", "decide", "monitor"], "cards": [{"title": "Operator cockpit", "body": "One-screen surface for the operations lead to understand what matters first."}, {"title": "API contract", "body": "Structured endpoints for health, manifest, readiness, and showcase data."}, {"title": "Deployment path", "body": "Repository includes Docker, Compose, CI workflow, and a Pages-ready landing surface."}], "scene": "neural-ribbon", "theme": {"bg": "#0f0c07", "surface": "#1f1811", "ink": "#fff8ef", "muted": "#cab59a", "accent": "#ffb15e", "accent2": "#7ef7d0"}, "pages_url": "https://r-behera.github.io/milvus-vector-search-operations/", "api_examples": {"health": {"status": "ok", "project": "milvus-vector-search-operations"}, "readiness": {"api": "ready", "landing_page": "docs/index.html", "container": "Dockerfile present"}, "signals": [{"name": "Decision coverage", "status": "strong", "detail": "App and landing narrative aligned"}, {"name": "Operator context", "status": "strong", "detail": "Primary user anchored as operations lead"}, {"name": "Delivery path", "status": "ready", "detail": "Pages + containerized app scaffold generated"}]}};</script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
